@@ -108,7 +108,7 @@ namespace calc4
             }
 
             Console.WriteLine("NG"); 
-            Console.WriteLine("You can calc again if you input more");
+            Console.WriteLine("You can calc again if you input \"more\"");
 
             if (Console.ReadLine().ToString() == "more")
                 Main(new string[0]);
