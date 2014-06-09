@@ -12,14 +12,10 @@ namespace calc4
         {
             helper _helper = new helper();
 
-            Console.WriteLine("1桁目の数字を入力してください");
-            double i1 = double.Parse(Console.ReadLine().ToString());
-            Console.WriteLine("2桁目の数字を入力してください");
-            double i2 = double.Parse(Console.ReadLine().ToString());
-            Console.WriteLine("3桁目の数字を入力してください");
-            double i3 = double.Parse(Console.ReadLine().ToString());
-            Console.WriteLine("4桁目の数字を入力してください");
-            double i4 = double.Parse(Console.ReadLine().ToString());
+            double i1 = double.Parse(args[0]);
+            double i2 = double.Parse(args[1]);
+            double i3 = double.Parse(args[2]);
+            double i4 = double.Parse(args[3]);
 
             double[] iarray = new double[4] { i1, i2, i3, i4 };
 
@@ -92,12 +88,6 @@ namespace calc4
 
                                 }
 
-                                Console.WriteLine();
-                                Console.WriteLine("You can calc again if you input \"more\"");
-
-                                if(Console.ReadLine().ToString()=="more")
-                                    Main(new string[0]);
-                                
                                 return;
                             }
                         }
@@ -106,12 +96,7 @@ namespace calc4
                     notUsedNumbers = saveNotUsedNumbers2;
                 }
             }
-
             Console.WriteLine("NG"); 
-            Console.WriteLine("You can calc again if you input \"more\"");
-
-            if (Console.ReadLine().ToString() == "more")
-                Main(new string[0]);
         }
     }
 

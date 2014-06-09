@@ -1,9 +1,0 @@
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\bin\Debug\calc4.exe.config
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\bin\Debug\calc4.exe
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\bin\Debug\calc4.pdb
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\obj\Debug\calc4.csprojResolveAssemblyReference.cache
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\obj\Debug\calc4.exe
-c:\users\shoho\documents\visual studio 2013\Projects\calc4\calc4\obj\Debug\calc4.pdb
-C:\Git\calc4\calc4\bin\Debug\calc4.exe.config
-C:\Git\calc4\calc4\obj\Debug\calc4.exe
-C:\Git\calc4\calc4\obj\Debug\calc4.pdb
