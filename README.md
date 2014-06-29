@@ -12,7 +12,7 @@ calc4
 ### supplementary
 
 プログラムを学んで初めて組んだプログラムです。   
-今見直すと酷すぎる・・・   
+ちゃんと作ることに挫折して文字列からDataTable.Computeメソッドを使うという裏技的手法を用いています。   
    
 To try to make 10 with operations 4 numbers by four arithmetic.   
 This is my first Programing so there are many problems...
