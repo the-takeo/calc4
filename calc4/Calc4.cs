@@ -8,12 +8,15 @@ namespace Calc4
 {
     class Calc4
     {
-        private List<string> CalcOperators = new List<string> { "+", "-", "*", "/" };
-
+        /// <summary>
+        /// 演算子の全並び順パターン
+        /// </summary>
         public List<string[]> CalcOperatorArrays
         {
             get
             {
+                List<string> CalcOperators = new List<string> { "+", "-", "*", "/" };
+
                 List<string[]> result = new List<string[]>();
 
                 foreach (var calcOperator1 in CalcOperators)
@@ -26,11 +29,13 @@ namespace Calc4
                         }
                     }
                 }
-
                 return result;
             }
         }
 
+        /// <summary>
+        /// 括弧始めと括弧閉じの位置の組み合わせの全パターン
+        /// </summary>
         public List<int[]> PlacesOfParenthesis
         {
             get
@@ -48,6 +53,11 @@ namespace Calc4
             }
         }
 
+        /// <summary>
+        /// 4つの数字の全並び順パターンを生成
+        /// </summary>
+        /// <param name="ints">4つの整数</param>
+        /// <returns>全並び順パターン</returns>
         public List<int[]> Generate4IntArrays(int[] ints)
         {
             if (ints.Length != 4)
@@ -89,10 +99,16 @@ namespace Calc4
                 }
                 UsedSequence.Remove(i1);
             }
-
             return result;
         }
 
+        /// <summary>
+        /// 10になるかを返す
+        /// 10になる場合は計算式をoutする
+        /// </summary>
+        /// <param name="Numbers">4つの数字</param>
+        /// <param name="formula">正解計算式</param>
+        /// <returns>10になるか</returns>
         public bool IsOK(int[] Numbers, out string formula)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
@@ -149,7 +165,6 @@ namespace Calc4
                     }
                 }
             }
-
             return false;
         }
     }
